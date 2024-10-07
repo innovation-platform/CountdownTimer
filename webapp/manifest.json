@@ -1,0 +1,16 @@
+{
+    "sap.app":{
+        "id":"countdowntimer.webapp"
+    },
+    "sap.ui5":{
+        "rootView":{
+            "viewName":"countdowntimer.webapp.view.Countdown",
+            "type":"XML"
+        },
+        "resources":{
+            "css":[
+                {"uri":"css/style.css"}
+            ]
+        }
+    }
+}

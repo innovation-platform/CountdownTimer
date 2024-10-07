@@ -1,0 +1,30 @@
+<mvc:View 
+controllerName="countdowntimer.webapp.controller.Countdown"
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns:core="sap.ui.core"
+>
+<Shell backgroundColor="#3299a8">
+    <App class="appBackground">
+        <Panel class="sapUiLargeMargin customPanel" width="90%" >
+        <content class="contentBackground">
+            
+        <VBox class="sapUiSmallMargin vertBackground" justifyContent="Center" alignItems="Center">
+            <core:Icon src="sap-icon://fob-watch" size="10rem" class="customIcon"/>
+            <Text text="Countdown Timer" class="sapUiSmallMargin customText" />
+            <Input id="inputSeconds" placeholder="Enter time in Seconds..." type="Number" class="customInput"/>
+            <HBox>
+            <Button class="customButton sapUiSmallMargin" text="Start" press=".onStartTimer" />
+            <Button class="customButton sapUiSmallMargin" text="Stop" press=".onStopTimer" />
+            <Button class="customButton sapUiSmallMargin" text="Pause/Resume" press=".onPauseResumeTimer" id="pauseResumeButton"  />
+            
+            </HBox>
+            <Text id="timerdisplay" text="Time left: 0 Seconds" class="customText" />
+            
+        </VBox>
+    </content>
+</Panel>
+
+    </App>
+</Shell>
+</mvc:View>
